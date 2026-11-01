@@ -41,7 +41,7 @@ main :: proc() {
     s2: Square = { size = 20 } // x = y = 0
 
     // No need to provide field names.
-    // I'm not sure if I'm a big fan of this, maybe when name is self-explanatory like Vecto3 or struct would have just one member, 
+    // I'm not sure if I'm a big fan of this, maybe when name is self-explanatory like Vector3 or struct would have just one member, 
     // but in both cases I'd use alias.
     s3 := Square { 10, 10, 5 }
 
