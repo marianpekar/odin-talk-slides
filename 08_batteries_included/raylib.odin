@@ -17,4 +17,5 @@ main :: proc() {
     }
 }
 
-// See https://www.raylib.com/cheatsheet/cheatsheet.html
+// For more about raylib see https://www.raylib.com/cheatsheet/cheatsheet.html
+// For more about Odin packages (Base, Core, Vendor) see https://pkg.odin-lang.org/
