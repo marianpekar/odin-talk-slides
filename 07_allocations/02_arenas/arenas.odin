@@ -58,8 +58,7 @@ main :: proc() {
         defer mem.tracking_allocator_destroy(&track)
         context.allocator = mem.tracking_allocator(&track)
 
-        leaked := new(int)
-        _ = leaked
+        leaked := new([4]int)
 
         for _, entry in track.allocation_map {
             fmt.eprintfln("leak: %v bytes at %v", entry.size, entry.location)
