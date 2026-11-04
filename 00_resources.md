@@ -4,6 +4,8 @@ https://odin-lang.org
 
 https://github.com/odin-lang
 
+https://odinbyexample.com
+
 # Book
 
 https://odinbook.com
