@@ -40,8 +40,8 @@ main :: proc() {
         // Growing arena (virtual memory)
         arena: virtual.Arena
         err := virtual.arena_init_growing(&arena, reserved = 4*mem.Kilobyte)
-
         defer virtual.arena_destroy(&arena)
+
         allocator := virtual.arena_allocator(&arena)
 
         items := make([dynamic]string, allocator)
@@ -50,7 +50,6 @@ main :: proc() {
         fmt.println(items) // ["one", "two"]
 
     } // again, no per-item delete, arena_destroy frees everything
-
 
     {
         // Tracking allocator finds leaks during development
