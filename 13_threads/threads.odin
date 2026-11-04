@@ -10,7 +10,7 @@ Work :: struct {
     mtx: ^sync.Mutex,
 }
 
-DISABLE_MUTEX :: #config(DISABLE_MUTEX, true)
+DISABLE_MUTEX :: #config(DISABLE_MUTEX, false)
 
 worker :: proc(w: Work) {
     fmt.printfln("thread %d started", w.id)

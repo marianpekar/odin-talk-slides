@@ -11,7 +11,7 @@ Square :: struct {
 }
 
 // Aliases (again, use :: as with constants. Syntax make sense, once struct or alias is declared like this, the name is reserved, like a constant)
-Vector2 :: [3]f32
+Vector2 :: [2]f32
 Vector3 :: [3]f32
 Matrix4x4 :: [4][4]f32
 
@@ -32,7 +32,7 @@ PlayerStats :: struct {
 Class :: enum {
 	Fighter, // 0
 	Mage,    // 1
-	Ranger   // 3
+	Ranger   // 2
 }
 
 main :: proc() {

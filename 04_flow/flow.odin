@@ -40,7 +40,7 @@ main :: proc() {
         case .Wednesday: day_jp = "水曜日"
             fallthrough // No "break" like in C, "fallthrough" is the opposite = omitting "break" in C
         case .Thursday: day_jp = "木曜日"
-        case .Friday: day_jp = "金曜日";
+        case .Friday: day_jp = "金曜日"
         case .Saturday: day_jp = "土曜日"; weekend = true
     }
     fmt.printfln(day_jp)
